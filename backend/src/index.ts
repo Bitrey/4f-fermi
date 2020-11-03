@@ -19,8 +19,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 import routes from "./routes";
+import { logger } from "./shared";
 app.use("/", routes);
 
 const PORT = Number(process.env.PORT) || 3000;
 const IP = process.env.IP || "127.0.0.1";
-app.listen(PORT, IP, () => console.log(`Server started at ${IP}:${PORT}`));
+app.listen(PORT, IP, () => logger.info(`Server started at ${IP}:${PORT}`));
