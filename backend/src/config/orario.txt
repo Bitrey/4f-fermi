@@ -1,0 +1,22 @@
+lunedì:
+8-9-matematica-De Carlo
+9-10-telecomunicazioni-Severi
+13-14-inglese-Macchia
+14-16-palestra-Zanasi
+martedì:
+8-9-italiano-Nerini
+9-11-matematica-De Carlo
+11-14-sistemi e reti-Marassi,Palmieri
+mercoledì:
+9-10-tpsit-Severi
+10-11-italiano-Nerini
+11-14-telecomunicazioni-Severi,Cuoghi
+giovedì:
+9-10-inglese-Macchia
+10-12-informatica-Natali,Russo
+12-14-storia-Nerini
+sabato:
+8-10-tpsit-Severi
+10-11-religione-Mazzetti
+11-12-telecomunicazioni-Severi
+12-13-sistemi e reti-Marassi

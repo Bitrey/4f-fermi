@@ -1,0 +1,166 @@
+[
+    {
+        "day": "lunedì",
+        "hours": [
+            {
+                "from": 8,
+                "to": 9,
+                "subject": "matematica",
+                "professor": [
+                    "DeCarlo"
+                ]
+            },
+            {
+                "from": 9,
+                "to": 10,
+                "subject": "telecomunicazioni",
+                "professor": [
+                    "Severi"
+                ]
+            },
+            {
+                "from": 13,
+                "to": 14,
+                "subject": "inglese",
+                "professor": [
+                    "Macchia"
+                ]
+            },
+            {
+                "from": 14,
+                "to": 16,
+                "subject": "palestra",
+                "professor": [
+                    "Zanasi"
+                ]
+            }
+        ]
+    },
+    {
+        "day": "martedì",
+        "hours": [
+            {
+                "from": 8,
+                "to": 9,
+                "subject": "italiano",
+                "professor": [
+                    "Nerini"
+                ]
+            },
+            {
+                "from": 9,
+                "to": 11,
+                "subject": "matematica",
+                "professor": [
+                    "DeCarlo"
+                ]
+            },
+            {
+                "from": 11,
+                "to": 14,
+                "subject": "sistemiereti",
+                "professor": [
+                    "Marassi",
+                    "Palmieri"
+                ]
+            }
+        ]
+    },
+    {
+        "day": "mercoledì",
+        "hours": [
+            {
+                "from": 9,
+                "to": 10,
+                "subject": "tpsit",
+                "professor": [
+                    "Severi"
+                ]
+            },
+            {
+                "from": 10,
+                "to": 11,
+                "subject": "italiano",
+                "professor": [
+                    "Nerini"
+                ]
+            },
+            {
+                "from": 11,
+                "to": 14,
+                "subject": "telecomunicazioni",
+                "professor": [
+                    "Severi",
+                    "Cuoghi"
+                ]
+            }
+        ]
+    },
+    {
+        "day": "giovedì",
+        "hours": [
+            {
+                "from": 9,
+                "to": 10,
+                "subject": "inglese",
+                "professor": [
+                    "Macchia"
+                ]
+            },
+            {
+                "from": 10,
+                "to": 12,
+                "subject": "informatica",
+                "professor": [
+                    "Natali",
+                    "Russo"
+                ]
+            },
+            {
+                "from": 12,
+                "to": 14,
+                "subject": "storia",
+                "professor": [
+                    "Nerini"
+                ]
+            }
+        ]
+    },
+    {
+        "day": "sabato",
+        "hours": [
+            {
+                "from": 8,
+                "to": 10,
+                "subject": "tpsit",
+                "professor": [
+                    "Severi"
+                ]
+            },
+            {
+                "from": 10,
+                "to": 11,
+                "subject": "religione",
+                "professor": [
+                    "Mazzetti"
+                ]
+            },
+            {
+                "from": 11,
+                "to": 12,
+                "subject": "telecomunicazioni",
+                "professor": [
+                    "Severi"
+                ]
+            },
+            {
+                "from": 12,
+                "to": 13,
+                "subject": "sistemiereti",
+                "professor": [
+                    "Marassi"
+                ]
+            }
+        ]
+    }
+]
