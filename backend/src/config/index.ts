@@ -1,0 +1,1 @@
+export { timetable } from "./timetable";

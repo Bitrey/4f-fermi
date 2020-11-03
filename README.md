@@ -1,1 +1,13 @@
-# 4f-fermi
+# 4F Fermi
+
+Strumenti:
+
+-   Orario
+-   Estrazione
+
+Eventi:
+
+-   Verifica (tutta la classe / persone)
+-   Interrogazione (casuale / estratti)
+-   Compito
+-   Evento generico
