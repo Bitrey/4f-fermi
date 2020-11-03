@@ -3,6 +3,7 @@ import { Response, Router } from "express";
 import { BAD_REQUEST, INTERNAL_SERVER_ERROR, NOT_FOUND, OK } from "http-status";
 import { isValidObjectId } from "mongoose";
 import Event from "../models/Event";
+import { logger } from "../shared";
 const router = Router();
 
 interface SearchInterface {
@@ -67,7 +68,7 @@ router.get("/", async (req, res) => {
         const events = await Event.find(query).exec();
         res.json(events);
     } catch (err) {
-        console.error(err);
+        logger.error(err);
         res.status(INTERNAL_SERVER_ERROR).send(err);
     }
 });
@@ -83,7 +84,7 @@ router.get("/:id", async (req, res) => {
         const event = await Event.findOne({ _id: id }).exec();
         res.json(event);
     } catch (err) {
-        console.error(err);
+        logger.error(err);
         res.status(INTERNAL_SERVER_ERROR).send(err);
     }
 });
@@ -102,7 +103,7 @@ router.post("/", async (req, res) => {
         if (err instanceof mongoose.Error.ValidationError) {
             res.status(BAD_REQUEST).send(err.message);
         } else {
-            console.error(err);
+            logger.error(err);
             res.status(INTERNAL_SERVER_ERROR).send(err);
         }
     }
@@ -121,7 +122,7 @@ router.put("/:id", async (req, res) => {
             { type, body, date }
         ).exec();
     } catch (err) {
-        console.error(err);
+        logger.error(err);
         return res.status(INTERNAL_SERVER_ERROR).send(err);
     }
 
@@ -136,7 +137,7 @@ router.put("/:id", async (req, res) => {
         if (err instanceof mongoose.Error.ValidationError) {
             res.status(BAD_REQUEST).send(err.message);
         } else {
-            console.error(err);
+            logger.error(err);
             res.status(INTERNAL_SERVER_ERROR).send(err);
         }
     }
@@ -153,7 +154,7 @@ router.delete("/:id", async (req, res) => {
         await Event.deleteOne({ _id: id }).exec();
         res.sendStatus(OK);
     } catch (err) {
-        console.error(err);
+        logger.error(err);
         res.status(INTERNAL_SERVER_ERROR).send(err);
     }
 });
