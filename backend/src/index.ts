@@ -22,6 +22,11 @@ import routes from "./routes";
 import { logger } from "./shared";
 app.use("/", routes);
 
+// Morgan
+import morgan from "morgan";
+import { LoggerStream } from "./shared/logger";
+app.use(morgan("tiny", { stream: new LoggerStream() }));
+
 const PORT = Number(process.env.PORT) || 3000;
 const IP = process.env.IP || "127.0.0.1";
 app.listen(PORT, IP, () => logger.info(`Server started at ${IP}:${PORT}`));
